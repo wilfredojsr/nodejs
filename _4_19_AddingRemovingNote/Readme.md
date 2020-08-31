@@ -17,3 +17,8 @@ Adding a new note
 Duplicated note
 
 `node .\app.js add --title="Shopping" --body="An article"`
+
+Removing a note
+
+`node .\app.js add --title="Shopping"`
+
