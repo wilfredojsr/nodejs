@@ -1,24 +1,31 @@
 **Commands**
 
-`cd .\_4_19_AddingNote`
+`cd ./_4_19_AddingNote`
 
 Adding a new note
 
-`node .\app.js add --title="Shopping list" --body="An article"`
+`node ./app.js add --title="Shopping list" --body="An article"`
 
 Adding a new note
 
-`node .\app.js add --title="Shopping" --body="An article"`
+`node ./app.js add --title="Shopping" --body="An article"`
 
 Adding a new note
 
-`node .\app.js add --title="Shopping list2" --body="An article"`
+`node ./app.js add --title="Shopping list2" --body="An article"`
 
 Duplicated note
 
-`node .\app.js add --title="Shopping" --body="An article"`
+`node ./app.js add --title="Shopping" --body="An article"`
 
 Removing a note
 
-`node .\app.js add --title="Shopping"`
+`node ./app.js add --title="Shopping"`
 
+Listing a note
+
+`node ./app.js list`
+
+Reading a note
+
+`node ./app.js read --title="Shopping"`
