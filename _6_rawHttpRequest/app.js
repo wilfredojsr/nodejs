@@ -3,7 +3,7 @@ const url = 'http://api.weatherstack.com/current?access_key=5581fe424a60423859d2
 
 const request = http.request(url, (response) => {
   let data = ''
-console.log('ready')
+
   response.on('data', (chunk) => {
     data = data + chunk.toString()
   })
