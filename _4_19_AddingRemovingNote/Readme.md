@@ -4,28 +4,28 @@
 
 Adding a new note
 
-`node ./app.js add --title="Shopping list" --body="An article"`
+`node ./mongodb.js add --title="Shopping list" --body="An article"`
 
 Adding a new note
 
-`node ./app.js add --title="Shopping" --body="An article"`
+`node ./mongodb.js add --title="Shopping" --body="An article"`
 
 Adding a new note
 
-`node ./app.js add --title="Shopping list2" --body="An article"`
+`node ./mongodb.js add --title="Shopping list2" --body="An article"`
 
 Duplicated note
 
-`node ./app.js add --title="Shopping" --body="An article"`
+`node ./mongodb.js add --title="Shopping" --body="An article"`
 
 Removing a note
 
-`node ./app.js add --title="Shopping"`
+`node ./mongodb.js add --title="Shopping"`
 
 Listing a note
 
-`node ./app.js list`
+`node ./mongodb.js list`
 
 Reading a note
 
-`node ./app.js read --title="Shopping"`
+`node ./mongodb.js read --title="Shopping"`
