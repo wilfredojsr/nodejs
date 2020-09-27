@@ -3,7 +3,7 @@ const validator = require('validator')
 
 //const connectionURL = 'mongodb://<user>:encodeURIComponent('<pass>')@<host>:<port>/<database>?authSource=admin'
 const databaseName = 'task-manager'
-const connectionURL = 'mongodb://' + process.argv[2] + ':' + encodeURIComponent(process.argv[3]) + '@' + process.argv[4] + ':' + process.argv[5] + '/' + databaseName + '?authSource=admin'
+const connectionURL = 'mongodb://' + process.env.MONGO_DB_W + ':' + encodeURIComponent(process.env.MONGO_DB_X) + '@' + process.env.MONGO_DB_Y + ':' + process.env.MONGO_DB_Z + '/' + databaseName + '?authSource=admin'
 //const connectionURL = 'mongodb://127.0.0.1:27017'
 
 mongoose.connect(connectionURL, {
@@ -19,6 +19,7 @@ const User = mongoose.model('User', {
   },
   email: {
     type: String,
+    unique: true,
     required: true,
     trim: true,
     lowercase: true,

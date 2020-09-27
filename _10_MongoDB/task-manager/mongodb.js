@@ -2,7 +2,7 @@
 const {MongoClient, ObjectID} = require('mongodb')
 
 //const connectionURL = 'mongodb://<user>:encodeURIComponent('<pass>')@<host>:<port>?authSource=admin'
-const connectionURL = 'mongodb://' + process.argv[2] + ':' + encodeURIComponent(process.argv[3]) + '@' + process.argv[4] + ':' + process.argv[5] + '?authSource=admin'
+const connectionURL = 'mongodb://' + process.env.MONGO_DB_W + ':' + encodeURIComponent(process.env.MONGO_DB_X) + '@' + process.env.MONGO_DB_Y + ':' + process.env.MONGO_DB_Z + '?authSource=admin'
 //const connectionURL = 'mongodb://127.0.0.1:27017'
 const databaseName = 'task-manager'
 
